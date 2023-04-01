@@ -26,7 +26,7 @@ const HomePage = (props) => {
   const userpage = async () => {
       
       
-    const response = await fetch(`https://buymeanapple.herokuapp.com/${name}`,
+    const response = await fetch(`http://127.0.0.1:8000/${name}`,
     {
      method: 'GET',
      credentials: "include",
@@ -56,14 +56,14 @@ const HomePage = (props) => {
 
         
  useEffect(() => {
-    userpage()
+    //userpage()
   }, [])
 	
 	return (
 		<div>
 
         <h1>Home page under construction...</h1>
-        {user? <p>Click <Link to ="creator/profile" >here</Link> to visit your profile</p> : null}
+        {user? <p>Click <Link to ="creator/profile" >here</Link> to visit your profile</p> :<p>come back later</p>}
         
 
 </div>
