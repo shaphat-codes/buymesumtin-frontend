@@ -38,7 +38,7 @@ export const AuthProvider = ({children}) => {
 		setIsLoading(true)
 		e.preventDefault()
 		
-		let response = await fetch('http://127.0.0.1:8000/login/', {
+		let response = await fetch('https://api-buymesumtin.onrender.com/login/', {
 			method: "POST",
 
 			credentials: "include",
@@ -71,7 +71,7 @@ export const AuthProvider = ({children}) => {
 		let registerUser = async (e)=> {
 		setIsLoading(true)
 		e.preventDefault()
-		let response = await fetch('http://127.0.0.1:8000/register/', {
+		let response = await fetch('https://api-buymesumtin.onrender.com/register/', {
 			method: 'POST',
 			headers:{
 				'Content-Type':'application/json'

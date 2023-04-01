@@ -60,7 +60,7 @@ const ProfilePage = () => {
 
   const userPageGet = async () => {
       
-    const response = await fetch('http://127.0.0.1:8000/page-list',
+    const response = await fetch('https://api-buymesumtin.onrender.com/page-list',
     {
      method: 'GET',
      credentials: "include",
@@ -114,7 +114,7 @@ const ProfilePage = () => {
   
   const PageUpdate_v2 = async (e) => {
     setIsLoading(true)
-    const response =  await fetch(`http://127.0.0.1:8000/page-create/${user.user.pk}`,{
+    const response =  await fetch(`https://api-buymesumtin.onrender.com/page-create/${user.user.pk}`,{
       method: "PUT",
       
       
@@ -145,7 +145,7 @@ const ProfilePage = () => {
   const userpage = async () => {
       
       
-    const response = await fetch(`http://127.0.0.1:8000/${user.user.username}`,
+    const response = await fetch(`https://api-buymesumtin.onrender.com/${user.user.username}`,
     {
      method: 'GET',
      credentials: "include",
@@ -173,7 +173,7 @@ const ProfilePage = () => {
   
   const userPaymentGet = async () => {
       
-    const response = await fetch(`http://127.0.0.1:8000/support/user-payment-list/${user.user.pk}`,
+    const response = await fetch(`https://api-buymesumtin.onrender.com/support/user-payment-list/${user.user.pk}`,
     {
      method: 'GET',
      credentials: "include",
@@ -260,7 +260,7 @@ const ProfilePage = () => {
  
 
  const createWithdrawal = async () => {
-  const response = await fetch(`https://buymeanapple.herokuapp.com/withdrawal/`,{
+  const response = await fetch(`https://api-buymesumtin.onrender.com/withdrawal/`,{
     method: "POST",
     
     headers: {
@@ -318,7 +318,7 @@ const ProfilePage = () => {
 
  /// withdrawal history
  const getWithdrawals = async () => {
-  const response = await fetch(`https://buymeanapple.herokuapp.com/withdrawal-list/`,{
+  const response = await fetch(`https://api-buymesumtin.onrender.com/withdrawal-list/`,{
     method: "GET",
     
     headers:{

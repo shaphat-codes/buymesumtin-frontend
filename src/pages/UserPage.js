@@ -65,7 +65,7 @@ const UserPage = (props) => {
     const userpage = async () => {
       
       
-        const response = await fetch(`http://127.0.0.1:8000/${name}`,
+        const response = await fetch(`https://api-buymesumtin.onrender.com/${name}`,
         {
          method: 'GET',
          credentials: "include",
@@ -105,7 +105,7 @@ const UserPage = (props) => {
      
     const Support = async () => {
       setLoading(false)
-      const response =  await fetch('http://127.0.0.1:8000/support/payment-create/',{
+      const response =  await fetch('https://api-buymesumtin.onrender.com/support/payment-create/',{
         method: "POST",
         credentials: "include",
         headers: {
