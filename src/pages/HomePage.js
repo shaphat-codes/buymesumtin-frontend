@@ -63,7 +63,7 @@ const HomePage = (props) => {
 		<div>
 
         <h1>Home page under construction...</h1>
-        {user? <p>Click <Link to ="creator/profile" >here</Link> to visit your profile</p> :<p>come back later</p>}
+        {user? <p>Click <Link to ="creator/profile" >here</Link> to visit your profile</p> :<p><Link to = "creator/login">login</Link></p>}
         
 
 </div>
